@@ -11,6 +11,7 @@ const PostSummary = css`
   margin-bottom: 3rem;
   box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
   &:hover {
     box-shadow: -11px 11px 20px rgba(0, 0, 0, 0.5);
     transform: translate(3px, -3px);

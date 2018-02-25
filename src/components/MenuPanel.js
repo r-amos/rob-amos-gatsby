@@ -7,7 +7,7 @@ const menuPanel = css`
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #11998e;
+  background-color: #34495e;
   box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.7);
   padding: 0 2rem 1rem 2rem;
 `;
