@@ -7,7 +7,7 @@ import PostDate from "./PostDate";
 
 const Post = css`
   margin: 15rem auto;
-  width: 50%;
+  width: 70%;
 
   hr {
     height: 1rem;

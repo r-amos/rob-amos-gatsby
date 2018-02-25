@@ -31,10 +31,10 @@ export default () => {
           <NavigationItem name="Home" url="/" />
         </li>
         <li>
-          <NavigationItem name="About" url="/about/" />
+          <NavigationItem name="Blog" url="/blog/" />
         </li>
         <li>
-          <NavigationItem name="Blog" url="/blog/" />
+          <NavigationItem name="About" url="/about/" />
         </li>
         <li>
           <NavigationItem name="Contact" url="/contact" />

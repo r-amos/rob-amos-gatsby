@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import { css } from "emotion";
 
 const title = css`
-  font-size: 8rem;
+  font-size: 6rem;
   margin: 0 auto;
   width: 75%;
   text-align: center;
@@ -15,7 +15,7 @@ const title = css`
   span {
     margin-top: 3rem;
     display: block;
-    font-size: 5rem;
+    font-size: 2.5rem;
     letter-spacing: 1.5rem;
     text-shadow: -3px 3px 10px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
