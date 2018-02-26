@@ -7,7 +7,6 @@ import Logo from "./Logo";
 export default () => {
   return (
     <div>
-      <Logo />
       <MenuPanel />
     </div>
   );

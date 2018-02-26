@@ -3,7 +3,6 @@ import React from "react";
 import Post from "../components/posts/Post";
 
 export default ({ data }) => {
-  console.log(data);
   return (
     <Post
       title={data.markdownRemark.frontmatter.title}

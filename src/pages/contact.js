@@ -1,9 +1,8 @@
-import React from 'react';
-import {css} from 'emotion';
+import React from "react";
+import { css } from "emotion";
+
+import PageTitle from "../components/PageTitle";
 
 export default () => {
-
-    return <h1> Contact </h1>;
-
-
-}
+  return <PageTitle text={"Contact"} />;
+};

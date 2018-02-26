@@ -3,6 +3,7 @@ import Link from "gatsby-link";
 import { css } from "emotion";
 
 import PostSummary from "../components/posts/PostSummary";
+import PageTitle from "../components/PageTitle";
 
 const Blog = css`
   width: 60%;
@@ -19,20 +20,10 @@ const Blog = css`
   }
 `;
 
-const BlogHeading = css`
-  margin-top: 15rem;
-  margin-bottom: 3rem;
-  color: white;
-  text-align: center;
-  letter-spacing: 1rem;
-  font-size: 9rem;
-  text-shadow: -5px 5px 20px rgba(0, 0, 0, 0.5);
-`;
-
 export default ({ data }) => {
   return (
     <div className={Blog}>
-      <h3 className={BlogHeading}>Latest Posts</h3>
+      <PageTitle text={"Latest Posts"} />
       <hr />
       {data.allMarkdownRemark.edges.map(({ node }) => {
         return (
