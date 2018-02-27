@@ -36,9 +36,6 @@ export default () => {
         <li>
           <NavigationItem name="About" url="/about/" />
         </li>
-        <li>
-          <NavigationItem name="Contact" url="/contact" />
-        </li>
       </ul>
     </nav>
   );

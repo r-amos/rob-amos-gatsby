@@ -6,7 +6,7 @@ import PostContent from "./PostContent";
 import PostDate from "./PostDate";
 
 const Post = css`
-  margin: 15rem auto;
+  margin: 0 auto;
   width: 70%;
 
   hr {

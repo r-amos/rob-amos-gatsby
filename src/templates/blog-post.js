@@ -1,5 +1,4 @@
 import React from "react";
-
 import Post from "../components/posts/Post";
 
 export default ({ data }) => {

@@ -4,7 +4,19 @@ module.exports = {
   },
 
   plugins: [
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-js"
+            }
+          }
+        ]
+      }
+    },
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-source-filesystem`,

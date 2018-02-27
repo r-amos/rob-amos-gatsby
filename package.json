@@ -13,6 +13,7 @@
     "gatsby": "^1.9.207",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-emotion": "^1.1.13",
+    "gatsby-remark-prismjs": "^1.2.15",
     "gatsby-source-filesystem": "^1.5.23",
     "gatsby-transformer-remark": "^1.7.33"
   }

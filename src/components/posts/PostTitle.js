@@ -2,7 +2,7 @@ import React from "react";
 import { css } from "emotion";
 
 const PostTitle = css`
-  margin-top: 15rem;
+  margin-top: 10rem;
   margin-bottom: 3rem;
   color: white;
   text-align: center;
