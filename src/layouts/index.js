@@ -1,14 +1,13 @@
 import React from "react";
 import { injectGlobal } from "emotion";
 import { css } from "emotion";
+import "./index.css";
 
 import Header from "../components/Header";
 
 injectGlobal`
 
-@import url('https://fonts.googleapis.com/css?family=Patua+One');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 
 *,
 *::after,

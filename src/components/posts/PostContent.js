@@ -1,6 +1,6 @@
 import React from "react";
 import { css } from "emotion";
-require("prismjs/themes/prism-okaidia.css");
+require("prismjs/themes/prism-twilight.css");
 
 const PostContent = css`
   font-size: 2rem;

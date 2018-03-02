@@ -28,7 +28,7 @@ export default ({ data }) => {
       {data.allMarkdownRemark.edges.map(({ node }) => {
         return (
           <PostSummary
-            slug={node.frontmatter.slug}
+            path={node.frontmatter.path}
             title={node.frontmatter.title}
             excerpt={node.excerpt}
             date={node.frontmatter.date}
@@ -47,7 +47,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
-            slug
+            path
           }
           excerpt
         }
