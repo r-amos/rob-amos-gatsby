@@ -17,6 +17,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        tags
         date(formatString: "DD MMMM, YYYY")
         path
       }

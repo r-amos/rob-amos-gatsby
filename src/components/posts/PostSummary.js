@@ -2,6 +2,7 @@ import React from "react";
 import { css } from "emotion";
 
 import Button from "../Button";
+import Tags from "../Tags";
 
 const PostSummary = css`
   font-size: 2rem;
@@ -37,11 +38,11 @@ const PostExcerpt = css`
   font-family: Roboto;
 `;
 
-export default ({ path, title, date, excerpt }) => {
+export default ({ path, title, tags, date, excerpt }) => {
   return (
     <div className={PostSummary}>
       <h4 className={PostTitle}>{title}</h4>
-      <h5 className={PostDate}>{date} | </h5>
+      <h5 className={PostDate}>{date} | <Tags tags={tags} /></h5>
       <p className={PostExcerpt}>{excerpt}</p>
       <Button url={path} text={"Read More"} />
     </div>

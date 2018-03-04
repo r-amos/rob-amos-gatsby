@@ -1,6 +1,6 @@
 import React from "react";
 import { css } from "emotion";
-require("prismjs/themes/prism-twilight.css");
+require("prismjs/themes/prism-tomorrow.css");
 
 const PostContent = css`
   font-size: 2rem;
@@ -27,7 +27,8 @@ const PostContent = css`
 
   .gatsby-highlight {
     margin: 3rem auto;
-    width: 95%;
+    width: 97%;
+    box-shadow: -7.5px 7.5px 20px rgba(0, 0, 0, 0.5);
   }
 `;
 

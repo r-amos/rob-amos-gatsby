@@ -2,6 +2,7 @@
 title: "First Post"
 date: "2018-02-25"
 path: "first-post"
+tags: ["JavaScript", "HTML"]
 ---
 
 Bacon ipsum dolor amet chicken pork biltong, flank ball tip pig leberkas jowl. Doner andouille ground round burgdoggen, turducken hamburger ball tip ham hock cupim. Ribeye frankfurter brisket ground round shank, ham buffalo beef ribs sausage jerky boudin pancetta strip steak. Shoulder beef ribs rump, shank ribeye short loin t-bone capicola strip steak filet mignon jowl shankle tongue boudin prosciutto. Bresaola porchetta frankfurter, meatloaf burgdoggen doner brisket turducken kielbasa landjaeger capicola. Capicola meatloaf boudin andouille.

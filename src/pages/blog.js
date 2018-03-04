@@ -30,6 +30,7 @@ export default ({ data }) => {
           <PostSummary
             path={node.frontmatter.path}
             title={node.frontmatter.title}
+            tags={node.frontmatter.tags}
             excerpt={node.excerpt}
             date={node.frontmatter.date}
           />
@@ -46,6 +47,7 @@ export const query = graphql`
         node {
           frontmatter {
             title
+            tags
             date(formatString: "DD MMMM, YYYY")
             path
           }
