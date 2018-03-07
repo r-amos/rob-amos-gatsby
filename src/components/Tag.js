@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import {css} from 'emotion';
 
 const tag = css`
@@ -10,10 +11,13 @@ const tag = css`
   padding: 0.25rem 1rem;
   margin: 0 0.2rem;
   cursor: pointer;
+  text-decoration:none;
 `;
+
+
 
 export default ({name}) => {
 
-    return <span className={tag}>{name}</span>;
+    return <Link className={tag} to={`../blog/${name}`}>{name}</Link>;
 
 }

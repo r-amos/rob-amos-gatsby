@@ -9,13 +9,15 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           edges {
             node {
               frontmatter {
-                path
+                path,
+                tags
               }
             }
           }
         }
       }
     `).then(result => {
+      let distinctTags = [];
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: `/blog/${node.frontmatter.path}`,
@@ -23,6 +25,17 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           context: {
             path: node.frontmatter.path
           }
+        });
+        const {tags} = node.frontmatter;
+        tags.forEach(tag => {if(!distinctTags.includes(tag)) distinctTags.push(tag)});
+        distinctTags.forEach(tag => {
+          createPage({
+            path: `blog/${tag}`,
+            component: path.resolve("./src/templates/tags.js"),
+            context: {
+              tag: tag
+            }
+          })
         });
       });
       resolve();
