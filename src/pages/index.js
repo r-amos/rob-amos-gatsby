@@ -7,11 +7,11 @@ import codepen from "../img/codepen.svg";
 import linkedin from "../img/linkedin.svg";
 
 const title = css`
-  font-size: 6rem;
+  font-size: 4rem;
   margin: 0 auto;
   width: 75%;
   text-align: center;
-  letter-spacing: 1.5rem;
+  letter-spacing: 2rem;
   margin-top: 15%;
   color: white;
   text-shadow: -6px 6px 10px rgba(0, 0, 0, 0.5);
@@ -34,7 +34,7 @@ const linkBar = css`
   width: 10%;
   margin: 5rem auto 0 auto;
   img {
-    fill: white;
+    cursor: pointer;
   }
 `;
 

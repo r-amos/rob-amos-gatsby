@@ -1,4 +1,5 @@
 import React from "react";
+import Disqus from 'disqus-react';
 import { css } from "emotion";
 
 import PostTitle from "./PostTitle";
@@ -20,7 +21,21 @@ const Post = css`
   }
 `;
 
-export default ({ title, content, date }) => {
+const comment = css`
+
+  padding: 6rem 8rem;
+  background-color: #F2F1EF;
+  margin-bottom: 6rem;
+  box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.5);
+
+`
+
+export default ({ title, content, date, path }) => {
+  const disqusConfig = {
+    url: path,
+    identifier: path,
+    title: title,
+  };
   return (
     <div className={Post}>
       <PostTitle text={title} />
@@ -28,6 +43,9 @@ export default ({ title, content, date }) => {
       <PostContent content={content}>
         <PostDate date={date} />
       </PostContent>
+      <div className={comment}>
+        <Disqus.DiscussionEmbed shortname={'robamos'} config={disqusConfig} />
+      </div>
     </div>
   );
 };

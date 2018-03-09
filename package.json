@@ -8,6 +8,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "disqus-react": "^1.0.5",
     "emotion": "^9.0.2",
     "emotion-server": "^9.0.2",
     "gatsby": "^1.9.207",

@@ -8,8 +8,7 @@ export default ({ data }) => {
       content={data.markdownRemark.html}
       date={data.markdownRemark.frontmatter.date}
     />
-  );
-};
+  )};
 
 export const query = graphql`
   query BlogPostQuery($path: String!) {
@@ -24,3 +23,4 @@ export const query = graphql`
     }
   }
 `;
+                            

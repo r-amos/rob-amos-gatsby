@@ -5,8 +5,8 @@ import Button from "../components/Button";
 
 const About = css`
   font-size: 2rem;
-  color: #4e342e;
-  background-color: #fff8e1;
+  color: #22313F;
+  background-color: #ecf0f1;
   padding: 4rem 6rem;
   margin-bottom: 3rem;
   width: 60%;
@@ -16,7 +16,7 @@ const About = css`
 
 const underline = css`
     height: 1rem;
-    width: 30rem;
+    width: 10rem;
     margin: 0 auto 5rem auto;
     border: 0;
     height: 0px;
@@ -50,7 +50,7 @@ export default () => {
             letter-spacing: 0.35rem;
           `}
         >
-          A little bit about me
+          A little bit about me.
         </h2>
         <div
           className={css`

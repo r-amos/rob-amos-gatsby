@@ -7,14 +7,12 @@ const tag = css`
   font-weight: 100;
   color: white;
   background-color: #34495e;
-  border: 1px solid #11998e;
+  border: 1px solid #1e3c72;
   padding: 0.25rem 1rem;
   margin: 0 0.2rem;
   cursor: pointer;
   text-decoration:none;
 `;
-
-
 
 export default ({name}) => {
 

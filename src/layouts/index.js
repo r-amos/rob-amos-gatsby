@@ -24,7 +24,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background: linear-gradient(to left, #11998e, #38ef7d);
+  background: linear-gradient(to right, #1e3c72, #2a5298);
 }
 `;
 

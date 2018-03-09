@@ -11,7 +11,7 @@ const Blog = css`
 
   hr {
     height: 1rem;
-    width: 30rem;
+    width: 10rem;
     margin: 0 auto 5rem auto;
     border: 0;
     height: 0px;
@@ -23,7 +23,7 @@ const Blog = css`
 export default ({ pathContext, data }) => {
   return (
     <div className={Blog}>
-      <PageTitle text={`${pathContext.tag} Posts`} />
+      <PageTitle text={`${pathContext.tag}`} />
       <hr />
       {data.allMarkdownRemark.edges.map(({ node }) => {
         return (

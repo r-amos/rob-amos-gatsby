@@ -6,10 +6,10 @@ import Tags from "../Tags";
 
 const PostSummary = css`
   font-size: 2rem;
-  color: #4e342e;
-  background-color: #fff8e1;
+  color: #22313F;
+  background-color: #F2F1EF;
   padding: 4rem 6rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -20,7 +20,7 @@ const PostSummary = css`
 `;
 
 const PostTitle = css`
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 3rem;
   letter-spacing: 0.35rem;
 `;
