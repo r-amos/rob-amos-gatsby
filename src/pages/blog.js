@@ -6,8 +6,12 @@ import PostSummary from "../components/posts/PostSummary";
 import PageTitle from "../components/PageTitle";
 
 const Blog = css`
+max-width: 960px;  
+width: 95%;
+@media (min-width: 768px) {
   width: 60%;
-  margin: 0 auto;
+}
+margin: 0 auto;
 
   hr {
     height: 1rem;

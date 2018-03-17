@@ -1,5 +1,6 @@
 ---
 title: "Second Post"
+subtitle: "Some shabizzle about dizzle"
 date: "2018-02-26"
 path: "second-post"
 tags: ["PHP", "MySQL"]

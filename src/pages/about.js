@@ -4,6 +4,7 @@ import PageTitle from "../components/PageTitle";
 import Button from "../components/Button";
 
 const About = css`
+  max-width: 960px;  
   font-size: 2rem;
   color: #22313F;
   background-color: #ecf0f1;

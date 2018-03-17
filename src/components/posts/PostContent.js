@@ -8,14 +8,17 @@ const PostContent = css`
   line-height: 3rem;
   color: #22313F;
   background-color: #F2F1EF;
-  padding: 6rem 8rem;
+  @media (min-width: 768px) {
+    padding: 6rem 8rem;
+  }
+  padding: 4rem 4rem;
   box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.5);
 
   p {
     font-size: 1.5rem;
     letter-spacing: 0.05rem;
     font-family: Roboto;
-    margin-bottom: 1rem;
+    margin: 1rem 0rem;
     text-align: justify;
   }
 
@@ -25,6 +28,8 @@ const PostContent = css`
   }
 
   .gatsby-highlight {
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
     margin: 3rem auto;
     width: 97%;
     box-shadow: -7.5px 7.5px 20px rgba(0, 0, 0, 0.5);

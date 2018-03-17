@@ -9,13 +9,20 @@ const PostSummary = css`
   color: #22313F;
   background-color: #F2F1EF;
   padding: 4rem 6rem;
-  margin-bottom: 5rem;
+  @media (min-width: 768px) {
+    margin-bottom: 5rem;
+  }
   box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-  &:hover {
+  /*&:hover {
     box-shadow: -11px 11px 20px rgba(0, 0, 0, 0.5);
     transform: translate(3px, -3px);
+  }*/
+  margin-bottom: 1rem;
+  
+  &:last-child {
+    margin-bottom: 5rem;
   }
 `;
 

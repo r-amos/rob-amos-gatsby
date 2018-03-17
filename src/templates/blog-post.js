@@ -5,6 +5,8 @@ export default ({ data }) => {
   return (
     <Post
       title={data.markdownRemark.frontmatter.title}
+      subtitle={data.markdownRemark.frontmatter.subtitle}
+      tags={data.markdownRemark.frontmatter.tags}
       content={data.markdownRemark.html}
       date={data.markdownRemark.frontmatter.date}
     />
@@ -16,6 +18,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        subtitle
         tags
         date(formatString: "DD MMMM, YYYY")
         path

@@ -3,12 +3,19 @@ import Disqus from 'disqus-react';
 import { css } from "emotion";
 
 import PostTitle from "./PostTitle";
+import PostSubTitle from "./PostSubTitle";
 import PostContent from "./PostContent";
 import PostDate from "./PostDate";
+import Tags from "../Tags";
 
 const Post = css`
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
+  max-width: 960px;
+
+  @media (min-width: 768px) {
+    width: 70%;
+  }
 
   hr {
     height: 1rem;
@@ -30,7 +37,7 @@ const comment = css`
 
 `
 
-export default ({ title, content, date, path }) => {
+export default ({ title, subtitle, content, date, path, tags }) => {
   const disqusConfig = {
     url: path,
     identifier: path,
@@ -41,7 +48,9 @@ export default ({ title, content, date, path }) => {
       <PostTitle text={title} />
       <hr />
       <PostContent content={content}>
+      <PostSubTitle text={subtitle} />
         <PostDate date={date} />
+        <Tags tags={tags} />
       </PostContent>
       <div className={comment}>
         <Disqus.DiscussionEmbed shortname={'robamos'} config={disqusConfig} />

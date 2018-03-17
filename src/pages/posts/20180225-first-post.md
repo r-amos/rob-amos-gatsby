@@ -1,5 +1,6 @@
 ---
 title: "First Post"
+subtitle: "Some shabizzle about dizzle"
 date: "2018-02-25"
 path: "first-post"
 tags: ["JavaScript", "HTML"]
